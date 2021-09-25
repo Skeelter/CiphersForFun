@@ -30,7 +30,7 @@ def EncryptAtbash():
 #Fonction de decryptage
 def DecryptAtbash():
     #Données nécessaires
-    message = input("Initial message : ")
+    message = input("Encrypted message : ")
     message = list(message)
     decrypted = ""
     

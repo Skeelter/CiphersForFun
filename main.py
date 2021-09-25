@@ -1,5 +1,7 @@
 import string
 from caesar import *
+from atbash import *
+from affine import *
 
 print("Welcome in Ciphers For Fun 0.1 ! ")
 
@@ -26,7 +28,7 @@ while True :
         if selectedMethod.isdigit() == False:
             print("\nou must enter 1 for encryption or 2 for decryption")
         elif int(selectedMethod) > 2 or int(selectedMethod) < 1:
-            print("\nYou must enter 1 for encryption or 2 for decryption")
+            print("\n You must enter 1 for encryption or 2 for decryption")
         else :
             break
     
@@ -35,5 +37,15 @@ while True :
             EncryptCaesar()
         else :
             DecryptCaesar()
+    elif selectedCipher == "2" :
+        if selectedMethod == "1" :
+            EncryptAtbash()
+        else :
+            DecryptAtbash()
+    elif selectedCipher == "3" :
+        if selectedMethod == "1" :
+            EncryptAffine()
+        else :
+            DecryptAffine()
     else :
         break

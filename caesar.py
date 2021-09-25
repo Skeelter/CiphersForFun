@@ -43,7 +43,7 @@ def EncryptCaesar():
 #Fonction de décryptage
 def DecryptCaesar() :
     #Données nécessaires et choix de la manière de décryptage
-    message = list(input("Initial message : "))
+    message = list(input("Encrypted message : "))
     haveKey = input("Do you have the key ? (y/n) ")
     decrypted = ""
 
